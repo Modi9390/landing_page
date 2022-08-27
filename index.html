@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
 </head>
 <body>
-    <h1>Welcome</h1>
+        <nav class="navbar">
+            <ul>
+                
+                <li><a href="#footer">Contact</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">About</a>
+                  <div class="dropdown-content">
+                    <a href="#">Status</a>
+                    <a href="#">Profile</a>
+                    <a href="#">News</a>
+                  </div>
+                  <li><a href="#home">Home</a></li>
+                </li>
+              </ul>
+        </nav>
+    
+    <section class="p">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nemo quasi nam fuga minima laboriosam reprehenderit commodi possimus aut quis velit ut cum odit, alias asperiores, tempora laborum corrupti ratione!</p>
+    </section>
+    <section >
+        <img class="usa" src="images/usa.jpg" alt="usa photo">
+        <img class="imges" src="images/pro.jpg" alt="computer photo">
+    </section>
+    <footer id="footer">
+        <form action="/action_page.php">
+            <label for="fname">name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="your fullName" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="your email" required><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+    </footer>
 </body>
 </html>
